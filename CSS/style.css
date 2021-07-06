@@ -1,0 +1,47 @@
+
+
+#box{
+    background-color: rgb(201, 198, 172);
+}
+
+.text{
+    font-size: 16px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;
+    
+    
+}
+
+.text-cand{
+    color: rgb(180, 53, 123);
+    font-size: 15px;
+}
+.button-app{
+    border-radius: 10px;
+    border-color: rgb(133, 133, 99) 1px solid;
+    background-color: cadetblue;
+
+}
+
+
+.hr{
+    background-color: violet;
+    height: 3px;
+}
+.job{
+    color: rgb(38, 48, 179);
+}
+.size-text{
+    font-size: 14px;
+    
+}
+
+#dimensione{
+    height: 130px;
+}
+/* .text-area{
+     width: 100px;
+     height: 100px;
+     background-color: cadetblue;
+} */

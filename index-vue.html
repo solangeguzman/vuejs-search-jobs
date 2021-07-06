@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Search-jobs</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+
+</head>
+<body>
+    
+    
+    <div id="box">
+   
+       <div id="list-jobs">
+          <div :class="appliEd(index)" v-for="(job,index) in jobs">
+              <table>
+                   <tr class="size-text">
+                       <th><span>{{job.logo}}</span></th>
+                       <th><span> {{job.company}}</span></th>
+                       <th><span class="job">{{job.position}}</span></th>
+                       <th id="dimensione"><span>contratto:{{job.contract}}</span></th>
+                       <th><span>{{job.city}} -  annuncio del {{job.created_at}}</span></th>
+                        <th><span class="text">{{job.description}}</span></th>
+                       <hr class="hr">
+
+                       <!-- ------ -->
+                       <div v-if="starred.includes(index + 1)" @click="preferito(index)"><i class="far fa-heart"></i></div>
+                       <div v-else @click="preferito(index)"><i class="fas fa-heart"></i></div>
+                    </tr>  
+                    <tr>
+                       <!-- ----- -->
+                       <td>
+                           <div v-if="applied.includes(index + 1)">APPLIED</div>
+                           <div v-if="!applied.includes(index + 1)"><button class="button-app" @click="apply(index)">Applicato</button></div>
+                           <div  class="text-cand" v-if="applicated">LA TUA CANDIDATURA È STATA INVIATA</div>
+                   
+                       </td>
+                       </tr> 
+                </table>
+               
+              
+            </div>
+
+                     
+            
+                      
+        </div>
+  </div>       
+
+
+       
+      
+    <script src="./js/script-vue.js"></script>
+
+</body>
+</html>
