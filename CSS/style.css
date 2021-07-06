@@ -1,10 +1,13 @@
 
 
-#box{
-    background-color: rgb(201, 198, 172);
+#container{
+    background-color: rgba(49, 101, 160, 0.39);
+    margin: 40px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .text{
+   
     font-size: 16px;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -12,22 +15,26 @@
     
     
 }
-
+ .color-t{
+     color:burlywood
+ }
 .text-cand{
-    color: rgb(180, 53, 123);
-    font-size: 15px;
+    color: rgb(23, 32, 167);
+    font-size: 13px;
+    background-color: white;
+    border-radius: 15px 1px solid;
 }
 .button-app{
     border-radius: 10px;
-    border-color: rgb(133, 133, 99) 1px solid;
-    background-color: cadetblue;
+    border-color: rgb(116, 116, 95) 1px solid;
+    background-color: rgb(129, 129, 90);
 
 }
 
 
 .hr{
-    background-color: violet;
-    height: 3px;
+    background-color: rgb(204, 206, 209);
+    height: 10px;
 }
 .job{
     color: rgb(38, 48, 179);
