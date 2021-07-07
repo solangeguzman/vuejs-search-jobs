@@ -19,10 +19,30 @@
     <div id="container">
    
        <div id="list-jobs">
+
+          <select v-model="selected">
+               <option v-for="option in options" v-bind:Value="option.id" v-bind:key="option.value">
+                   {{option.value}}
+               </option>
+               
+            </select>
+          <div v-if="selected ===1">
+             <div v-if="starred.includes(index.id)" v-for="(item,index) in jobs">
+                <h2>Annunci Preferiti</h2>
+              
+              </div>
+          </div>
+
+          <!-- <th><span> <img :src="item.logo" alt="" width="45px">{{job.logo}}</span></th> -->
+
           <div :class="appliEd(index)" v-for="(job,index) in jobs">
               <table>
                    <tr class="size-text">
-                       <th><span>{{job.logo}}</span></th>
+                       <th><span>annuncio numero: {{job.id}}</span></th>
+                       <th><span> 
+                           <img src="./img/3.png" alt="" width="45px">
+                          </span>
+                        </th>
                        <th><span> {{job.company}}</span></th>
                        <th><span class="job">{{job.position}}</span></th>
                        <th id="dimensione"><span>contratto:{{job.contract}}</span></th>
@@ -38,17 +58,15 @@
                        <!-- ----- -->
                        <td>
                            <div class="color-t" v-if="applied.includes(index + 1)"><strong>APPLIED</strong></div>
-                           <div v-if="!applied.includes(index + 1)"><button class="button-app" @click="apply(index)">CANDIDARSI</button></div>
-                           <div  class="text-cand" v-if="candi"><strong>LA TUA CANDIDATURA È STATA INVIATA</strong></div>
-                   
+                           <div v-if="!applied.includes(index + 1)"><button class="button-app"   @click="apply(index)">CANDIDARSI</button></div>
+                           <div  class="text-cand"  class="" v-if="cand"><strong>LA TUA CANDIDATURA È STATA INVIATA</strong></div>
                        </td>
                        </tr> 
                 </table>
-               
               
             </div>
-
-                     
+            
+             
             
                       
         </div>

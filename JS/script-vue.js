@@ -11,7 +11,7 @@ Vue.config.devtools = true;
                   position: 'Developer',
                   description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis',
                   created_at: '5/22/2021',
-                  logo: '1.png',
+                  logo: './img/3.jpg',
                   city: 'Roma',
                   contract: 'Full Time'
                 },
@@ -22,7 +22,7 @@ Vue.config.devtools = true;
                   position: 'Doctor',
                   description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis',
                   created_at: '5/23/2021',
-                  logo: '',
+                  logo: './img/3.jpg',
                   city: 'Genova',
                   contract: 'Full Time'
 
@@ -34,7 +34,7 @@ Vue.config.devtools = true;
                   position: 'Infermiero',
                   description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis',
                   created_at: '5/28/2021',
-                  logo: '',
+                  logo: './img/3.jpg',
                   city: 'Milano',
                   contract: 'Full Time'
                 },
@@ -44,7 +44,7 @@ Vue.config.devtools = true;
                     position: 'Veterinario',
                     description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis',
                     created_at: '5/29/2021',
-                    logo: '',
+                    logo: './img/3.jpg',
                     city: 'Roma',
                     contract: 'Full Time' 
                 },
@@ -54,13 +54,17 @@ Vue.config.devtools = true;
                   position: 'Developer',
                   description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis',
                   created_at: '5/30/2021',
-                  logo: '',
+                  logo: './img/3.jpg',
                   city: 'Piacenza',
                   contract: 'Full Time'
                 }
             ],
             starred:[1,2,3],
-            applied:[4,5]
+            applied:[4,5],
+            options:[
+              {id:1, value: 'annunci preferiti'},
+              {id:2,value:'candidature'}
+            ]
            },
            methods: {
             preferito: function (index) {
@@ -83,7 +87,7 @@ Vue.config.devtools = true;
                }else{
                   this.starred.splice(index, 1);
                   setTimeout(() => {
-                    this.candi = true;
+                    this.cand = true;
                   }, 1000);
                 } 
               }
