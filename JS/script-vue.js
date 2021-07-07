@@ -64,7 +64,9 @@ Vue.config.devtools = true;
             options:[
               {id:1, value: 'annunci preferiti'},
               {id:2,value:'candidature'}
-            ]
+            ],
+            selected:1,
+            text: ''
            },
            methods: {
             preferito: function (index) {
