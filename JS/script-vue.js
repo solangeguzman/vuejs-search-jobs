@@ -1,5 +1,6 @@
 Vue.config.devtools = true;
 
+
  new Vue({
   el: '#list-jobs',
   data: {
@@ -94,7 +95,4 @@ Vue.config.devtools = true;
               }
 
         }
-});
-
-
-
+})

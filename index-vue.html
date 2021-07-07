@@ -51,14 +51,14 @@
                        <hr class="hr">
 
                        <!-- ------ -->
-                       <div v-if="starred.includes(index + 1)" @click="preferito(index)"><i class="far fa-heart"></i></div>
+                       <div v-if="starred.includes(index + 1)" @click="preferito(index)" ><i class="far fa-heart"></i></div>
                        <div v-else @click="preferito(index)"><i class="fas fa-heart"></i></div>
                     </tr>  
                     <tr>
                        <!-- ----- -->
                        <td>
                            <div class="color-t" v-if="applied.includes(index + 1)"><strong>APPLIED</strong></div>
-                           <div v-if="!applied.includes(index + 1)"><button class="button-app"   @click="apply(index)">CANDIDARSI</button></div>
+                           <div v-if="!applied.includes(index+1)"><button class="button-app"   @click="apply(index)">CANDIDARSI</button></div>
                            <div  class="text-cand"  class="" v-if="cand"><strong>LA TUA CANDIDATURA È STATA INVIATA</strong></div>
                        </td>
                        </tr> 
