@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Search-jobs</title>
+</head>
+<body background="./img/9.jpg">
+    
+    
+    <div id="container">
+       <div id="list-jobs">
+           <h4>OFFERTE DI LAVORO</h4>
+             <div  v-for="(item, index) in jobs" v-if="starred.includes(item.id)">
+                   
+                   <table>
+                        <tr>
+                            <td><div @click="prefer(item.id)" ><i class="fas fa-heart"></i></div></td>
+                            <td><span class="id">{{item.id}}</span></td>
+                            <td><span class="text-1">{{item.company}}</span></td>
+                            <td><span> <img class="img" src="./img/3.jpg" width="40" height="40">  </span></td>
+                            <td><span class="text-1" >{{item.position}}</span></td>
+                            <td><span class="text-1">{{item.contract}}</span></td>
+                            <td><span class="text-1">{{item.description}}</span>
+                                <span class="data-1"><strong>{{item.city}} - {{item.created_at}}</strong></span>
+                            </td>
+                            <hr>
+                          </tr>
+                    </table>
+                    <div><button class="button-app" v-if="!applied.includes(item.id)" @click="appliedd(item.id)">CANDIDARSI</button></div>
+              </div>
+                <!------------- -->
+                    
+                 <!-- CANDIDATURE JOBS -->
+                    
+                <div class="color-text" v-for="(item, index) in jobs" v-if="!starred.includes(item.id)">
+                     <div><button @click="appliedd(item.id)" v-if="!applied.includes(item.id)">applied</button></div>
+                     <h4>Applied</h4>
+                     <table>
+                        <tr>
+                            <td><div @click="addPrefer(item.id)" class="heart"><i class="far fa-heart"></i></div></td>
+                            <td></td>
+                            <td><span class="id">{{item.id}}</span></td>
+                            <td><span class="text">{{item.company}}</span></td>
+                            <td><span> <img class="img" src="./img/3.jpg" width="40" height="40">  </span></td>
+                            <td><span class="text" >{{item.position}}</span></td>
+                            <td><span class="text">{{item.contract}}</span></td>
+                            
+                            <td><span class="text">{{item.description}}</span>
+                                <span class="data"><strong>{{item.city}} - {{item.created_at}}</strong></span>
+                            </td>
+                            <hr>
+                       </tr>
+                     </table>
+                </div>  
+                <div class="flagschermo"  v-if="cand"> LA TUA CANDIDATURA È STATA INVIATA</div>                   
+     </div>
+</div>       
+<script src="./JS/script.js"></script>
+
+</body>
+</html>

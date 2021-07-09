@@ -1,57 +1,77 @@
-
+body{
+font-family: sans-serif;
+}
 
 #container{
     background-color: rgba(49, 101, 160, 0.39);
     margin: 40px;
     border-radius: 15px 15px 15px 15px;
+    position: relative;
+}
+
+.color-text{
+    background-color: rgba(185, 181, 145, 0.932);
+    border-radius: 15px 15px 15px 15px;
 }
 
 .text{
-   
     font-size: 16px;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 5px;
-    
-    
+    margin: 5px;  
 }
- .color-t{
-     color:burlywood
- }
-.text-cand{
-    color: rgb(23, 32, 167);
+
+.data{
+    color: rgb(79, 102, 167);
     font-size: 13px;
-    background-color: white;
-    border-radius: 15px 1px solid;
+    
 }
+
+/* .heart{
+    border:red;
+} */
+/* --- */
+.id{
+    color:blanchedalmond
+}
+/* .heart-1{
+   background-color: red;  
+} */
+.data-1{
+    color: rgb(34, 43, 66);
+    font-size: 13px;
+    
+}
+.text-1{
+    font-size: 16px;
+    color: rgb(19, 15, 15);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;  
+}
+/* ---------- */
+
+
+ .color-t{
+     color:rgb(255, 255, 255)
+ }
+
 .button-app{
     border-radius: 10px;
     border-color: rgb(116, 116, 95) 1px solid;
     background-color: rgb(129, 129, 90);
 
 }
-/* .box-img{
-    background-color: chocolate;
-    width: 500px;
-} */
 
-.hr{
-    background-color: rgb(204, 206, 209);
-    height: 10px;
-}
-.job{
-    color: rgb(38, 48, 179);
-}
-.size-text{
-    font-size: 14px;
-    
+.flagschermo{
+    position: absolute;
+    right:-20;
+    margin-bottom: -200px;
+    background-color: rgb(179, 174, 117);
+    border: rgb(230, 227, 109) solid 2px;
+    border-radius: 15px;
+    color: white;
 }
 
-#dimensione{
-    height: 130px;
+.img{
+    border-radius: 5px;
 }
-/* .text-area{
-     width: 100px;
-     height: 100px;
-     background-color: cadetblue;
-} */
