@@ -63,7 +63,7 @@ new Vue(
                 company: 'AZIENDA OSPEDALIERA',
                 position: 'Doctor',
                 description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis',
-                created_at: '5/23/2021',
+                created_at: '23/9/2021',
                 logo: '',
                 city: 'Genova',
                 contract: 'Full Time'
@@ -75,7 +75,7 @@ new Vue(
                 company: 'TEZENIS',
                 position: 'STORE MANAGER',
                 description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis',
-                created_at: '5/28/2021',
+                created_at: '28/9/2021',
                 logo: '',
                 city: 'Milano',
                 contract: 'Full Time'
@@ -85,7 +85,7 @@ new Vue(
                   company: 'ZARA',
                   position: 'commessa',
                   description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis',
-                  created_at: '5/29/2021',
+                  created_at: '29/9/2021',
                   logo: '',
                   city: 'Roma',
                   contract: 'Full Time' 
@@ -95,7 +95,7 @@ new Vue(
                 company: 'KIKO',
                 position: 'Adetto cassa',
                 description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis',
-                created_at: '5/30/2021',
+                created_at: '30/9/2021',
                 logo: '',
                 city: 'Piacenza',
                 contract: 'Full Time'
